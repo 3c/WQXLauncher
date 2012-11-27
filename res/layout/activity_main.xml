@@ -3,12 +3,28 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
 
-    <TextView
-        android:layout_width="wrap_content"
+    <FrameLayout
+        android:id="@+id/framelayout_home"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"
-        android:text="@string/hello_world"
-        tools:context=".MainActivity" />
+        android:paddingBottom="5dip" >
+
+        <com.wqx.launcher.views.ScrollLayout
+            android:id="@+id/ScrollLayoutTest"
+            android:layout_width="fill_parent"
+            android:layout_height="550dip" >
+        </com.wqx.launcher.views.ScrollLayout>
+
+        <LinearLayout
+            android:id="@+id/navigateLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="10dip"
+            android:background="#00000000"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal" >
+        </LinearLayout>
+    </FrameLayout>
 
 </RelativeLayout>
